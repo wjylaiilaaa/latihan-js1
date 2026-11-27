@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percobaan obyek js</title>
+</head>
+<body>
+    <h1 id="judul">Judul awal</h1>
+    <button id="ubah" type="button">Ubah judul </button>
+    <p id="info">Tombol belum diklik.</p>
+
+    <script>
+        const judul = document.getElementById("judul");
+        const tombol = document.getElementById("ubah");
+        const info = document.getElementById("Info");
+
+        tombol.addEventListener("click", function(){
+            judul.textContent = "Judul baru";
+            info.textContent = "Judul tab: " + document.title;
+            console.log(window.location.protocol);
+        });
+    </script>
+</body>
+</html>

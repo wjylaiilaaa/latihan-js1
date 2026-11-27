@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi bawaan</title>
+</head>
+<body>
+    <h1>Konversi dan pembulatan</h1>
+    <pre id="hasil"></pre>
+
+    <script>
+        teks = "12.75";
+        angka = Number(teks);
+        bulat = Math.round(angka);
+        terbesar = Math.max(angka, 10, 15);
+        valid = Number.isFinite(angka);
+
+        document.getElementById("hasil").textContent = [
+            "Nilai asli = " + (teks),
+            "Setelah konversi + 2 =" + (angka + 2),
+            "Pembulatan = " + bulat,
+            "Terbesar = " + terbesar,
+            "Angka terbatas = " + valid
+        ].join("\n")
+    </script>
+</body>
+</html>
